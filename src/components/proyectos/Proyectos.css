@@ -99,4 +99,12 @@
   .tecnologia:hover {
     background-color: #ddd;
   }
+  @media (width <= 640px) {
+    .tarjeta-proyecto{
+        justify-content: center;
+    }
+    .informacion-proyecto{
+      width: 100%;
+    }
+  }
   
