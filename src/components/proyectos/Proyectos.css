@@ -1,0 +1,102 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+  }
+  
+  .titulo-principal {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #22d3ee;
+  }
+  
+  .tarjeta-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    background-color: #1e293b;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 3%;
+  }
+  
+  .imagen-proyecto {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-color: #1e293b;
+  }
+  
+  .informacion-proyecto {
+    background-color: #1e293b;
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .titulo-proyecto {
+    background-color: #1e293b;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #ffff;
+  }
+  
+  .lista-tecnologias {
+    background-color: #1e293b;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .tecnologia_1 {
+    background-color: #180a94;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    color: #ffff;
+  }
+  .tecnologia_2 {
+    background-color: #0a940a;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    color: #ffff;
+  }
+  .tecnologia_3 {
+    background-color: #94480a;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    color: #ffff;
+  }
+  .tecnologia_4 {
+    background-color: #dadd0a;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    color: #ffff;
+  }
+  
+  .descripcion-proyecto {
+    background-color: #1e293b;
+    font-size: 0.8em;
+    color: #777;
+    line-height: 1.5;
+  }
+  
+  /* Efectos al pasar el mouse (hover) */
+  .tarjeta-proyecto:hover .imagen-proyecto {
+    transform: scale(1.1);
+  }
+  
+  .tecnologia:hover {
+    background-color: #ddd;
+  }
+  

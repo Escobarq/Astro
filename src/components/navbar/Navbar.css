@@ -1,0 +1,78 @@
+.navbar_content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo_and_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; /* Adjust spacing between logo/title and links */
+}
+
+.title_logo {
+  margin-left: 1rem; /* Adjust spacing between logo and title */
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  /* Ensure text-gradient compatibility with browsers you target */
+  background-image: linear-gradient(to right, #0ea5e9, #22d3ee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.links_container {
+  display: flex;
+  width: 30%; /* Adjust width for responsive layout */
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.Links {
+  color: #ffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1%;
+}
+
+.Logo_icon {
+  color: #0891b2;
+  margin-right: 0.25rem; /* Adjust spacing as needed */
+  height: 2.5rem; /* Adjust height as needed */
+  width: 2.5rem;
+}
+
+@media (width <= 640px) {
+  .Logo_icon{
+    display: none;
+  }
+  .navbar_items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo_and_title {
+    margin-bottom: 0.5rem; /* Adjust spacing on smaller screens */
+  }
+  .Logo_tittle{
+    text-align: center;
+  }
+
+  .links_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Adjust spacing on smaller screens */
+    width: 100%; /* 100% width for full-width links on mobile */
+  }
+}

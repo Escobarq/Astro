@@ -1,0 +1,116 @@
+.presentation-section {
+    /* Global styles for the entire section */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 960px; /* Adjust as needed */
+    padding: 3rem 2rem;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem; /* Adjust gap between elements */
+  }
+  
+  .introduction {
+    width: 100%;
+    flex: 1;
+  }
+  .hero-text {
+    color: #ffffff;
+    font-size: 3rem; /* Adjust font size */
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .gradient-text {
+    color: transparent;
+    /* Use a fallback color that works in most browsers */
+    background-color: #61dafb;
+    /* Use multiple background colors to simulate gradient without text gradient property */
+    background-clip: text;
+    background-size: 100% 100%;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Create a subtle shadow effect */
+  }
+  
+  .description {
+    font-size: 1rem; /* Adjust font size */
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  
+  .portfolio-link {
+    color: #007bff; /* Default Bootstrap blue */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .portfolio-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-links img {
+    width: 32px; /* Adjust icon size */
+    height: 32px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .social-links img:hover {
+    transform: translateY(-2px); /* Slight animation on hover */
+  }
+  
+  .avatar-container {
+    text-align: center;
+  }
+  
+  .avatar-container img {
+    width: 200px; /* Adjust image width */
+    height: 200px; /* Adjust image height */
+    border-radius: 50%; /* Make avatar image round */
+  }
+
+  /* Iconos de flutter react y tauri  */
+  .portfolio-link {
+    position: relative;
+  }
+  
+  .icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .icon-container img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .portfolio-link:hover .icon-container {
+    opacity: 1;
+  }
+  
+  .portfolio-link:hover .icon-container .icon {
+    visibility: visible;
+  }
+  
+  .icon {
+    visibility: hidden;
+  }
+  
+  @media (width <= 640px) {
+    .content-container{
+        flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,22 @@
+---
+import './index.css'
+import Navbar from '../components/navbar/Navbar.astro'
+import Saludo from '../components/saludo/Saludo.astro'
+import Proyectos from '../components/proyectos/Proyectos.astro'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Mi Portafolio </title>
+  </head>
+  <body>
+    <Navbar/>
+    <Saludo/>
+    <Proyectos/>
+  </body>
+</html>
+
