@@ -3,6 +3,7 @@ import './index.css'
 import Navbar from '../components/navbar/Navbar.astro'
 import Saludo from '../components/saludo/Saludo.astro'
 import Proyectos from '../components/proyectos/Proyectos.astro'
+import Skills from '../components/skills/Skills.astro'
 ---
 
 <html lang="en">
@@ -17,6 +18,27 @@ import Proyectos from '../components/proyectos/Proyectos.astro'
     <Navbar/>
     <Saludo/>
     <Proyectos/>
+    <Skills/>
   </body>
 </html>
 
+<script>
+
+// scrollEffect.js
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.scroll-effect');
+    
+    elements.forEach(function(element) {
+      var bounding = element.getBoundingClientRect();
+      if (bounding.top < window.innerHeight * 0.75) {
+        element.classList.add('active'); // Agregar la clase 'active'
+      } else {
+        element.classList.remove('active'); // Quitar la clase 'active'
+      }
+    });
+  });
+});
+
+
+</script>

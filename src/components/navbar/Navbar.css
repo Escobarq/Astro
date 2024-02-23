@@ -1,3 +1,7 @@
+:root {
+  --white-hover-color: #ffff;
+}
+
 .navbar_content {
   margin: 0 auto;
   width: 100%;
@@ -43,6 +47,23 @@
   font-size: 1rem;
   font-weight: 700;
   margin: 1%;
+  text-decoration: none;
+  position: relative;
+}
+
+.Links::after {
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  bottom: -2px; 
+  width: 0; 
+  height: 2px; 
+  background-color: #ffffff; 
+  transition: all 0.3s ease; 
+}
+
+.Links:hover::after {
+  width: 100%; /* Ajusta el ancho al 100% al pasar el ratón por encima */
 }
 
 .Logo_icon {
@@ -53,7 +74,7 @@
 }
 
 @media (width <= 640px) {
-  .Logo_icon{
+  .Logo_icon {
     display: none;
   }
   .navbar_items {
@@ -65,7 +86,7 @@
   .logo_and_title {
     margin-bottom: 0.5rem; /* Adjust spacing on smaller screens */
   }
-  .Logo_tittle{
+  .Logo_tittle {
     text-align: center;
   }
 
@@ -76,3 +97,4 @@
     width: 100%; /* 100% width for full-width links on mobile */
   }
 }
+
