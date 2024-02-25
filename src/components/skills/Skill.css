@@ -1,32 +1,35 @@
-.progress {
-  height: 35px;
-  width: 100%;
-  border: 1px solid #428bca;
-  border-radius: 5px;
-  background-color: #e6f3fa;
-  margin-bottom: 15px;
-}
 .titulo {
   color:#22d3ee;
 }
-.space{
-  margin: 1%;
-}
-.progress-bar {
+
+.skills {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  background: #428bca;
-  display: flex;
-  align-items: center;
-  transition: width 0.25s;
-  border-radius: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.progress-bar-text {
-  margin-left: 10px;
+.skill {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.skill img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+
+.skill-name, .skill-library {
+  display: block;
   font-weight: bold;
-  color: #ffffff;
-  background-color: #0000;
+}
+
+.zoom {
+  transition: transform .2s; 
+}
+
+.zoom:hover {
+  transform: scale(1.3); 
 }

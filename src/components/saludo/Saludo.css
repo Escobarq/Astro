@@ -1,6 +1,7 @@
 .presentation-section {
     /* Global styles for the entire section */
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin: 0 auto;
     max-width: 1000px; /* Adjust as needed */
@@ -30,7 +31,7 @@
     display: block;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 24ch;
+    width: 11ch;
     color: transparent;
     background-color: #61dafb;
     background-clip: text;
@@ -91,6 +92,7 @@
   
   @media (width <= 640px) {
     .content-container{
+      justify-content: center;
         flex-direction: column;
     }
   }

@@ -90,7 +90,11 @@
     color: #777;
     line-height: 1.5;
   }
-  
+  a {
+    text-decoration: none;
+    background: none;
+    color: #ffff;
+  }
   /* Efectos al pasar el mouse (hover) */
   .tarjeta-proyecto:hover .imagen-proyecto {
     transform: scale(1.1);
