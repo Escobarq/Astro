@@ -1,0 +1,299 @@
+[debug] [2024-03-05T22:37:10.845Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T22:37:10.849Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-03-05T22:37:10.849Z] CLI Version:   13.4.0
+[debug] [2024-03-05T22:37:10.850Z] Platform:      win32
+[debug] [2024-03-05T22:37:10.850Z] Node Version:  v20.9.0
+[debug] [2024-03-05T22:37:10.850Z] Time:          Tue Mar 05 2024 17:37:10 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-03-05T22:37:10.850Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T22:37:10.860Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T22:37:10.861Z] > authorizing via signed-in user (juandeq16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Apexl\Desktop\Astro
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-03-05T22:37:50.460Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-03-05T22:37:50.461Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"Portafolio","name":"miport11"}
+[debug] [2024-03-05T22:37:51.480Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-03-05T22:37:51.481Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-03-05T22:37:52.043Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-03-05T22:38:16.020Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T22:38:16.023Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-03-05T22:38:16.024Z] CLI Version:   13.4.0
+[debug] [2024-03-05T22:38:16.024Z] Platform:      win32
+[debug] [2024-03-05T22:38:16.024Z] Node Version:  v20.9.0
+[debug] [2024-03-05T22:38:16.024Z] Time:          Tue Mar 05 2024 17:38:16 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-03-05T22:38:16.025Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T22:38:16.036Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T22:38:16.036Z] > authorizing via signed-in user (juandeq16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Apexl\Desktop\Astro
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] 
+=== Hosting Setup
+[debug] [2024-03-05T22:39:49.652Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T22:39:49.656Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-03-05T22:39:49.657Z] CLI Version:   13.4.0
+[debug] [2024-03-05T22:39:49.657Z] Platform:      win32
+[debug] [2024-03-05T22:39:49.657Z] Node Version:  v20.9.0
+[debug] [2024-03-05T22:39:49.657Z] Time:          Tue Mar 05 2024 17:39:49 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-03-05T22:39:49.657Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T22:39:49.666Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T22:39:49.666Z] > authorizing via signed-in user (juandeq16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Apexl\Desktop\Astro
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-03-05T22:40:04.646Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-03-05T22:40:04.647Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"portafolio","name":"portafolio"}
+[debug] [2024-03-05T22:40:05.477Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-03-05T22:40:05.477Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-03-05T22:40:05.644Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID portafolio. Please try again with a unique project ID.
+[debug] [2024-03-05T22:40:17.719Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T22:40:17.722Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-03-05T22:40:17.723Z] CLI Version:   13.4.0
+[debug] [2024-03-05T22:40:17.723Z] Platform:      win32
+[debug] [2024-03-05T22:40:17.723Z] Node Version:  v20.9.0
+[debug] [2024-03-05T22:40:17.723Z] Time:          Tue Mar 05 2024 17:40:17 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-03-05T22:40:17.723Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T22:40:17.731Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T22:40:17.732Z] > authorizing via signed-in user (juandeq16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Apexl\Desktop\Astro
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-03-05T22:40:34.173Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-03-05T22:40:34.173Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"PortafoliodeJuanda","name":"PortafoliodeJuanda"}
+[debug] [2024-03-05T22:40:34.917Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-03-05T22:40:34.917Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-03-05T22:40:35.338Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-03-05T22:44:02.873Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T22:44:02.876Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-03-05T22:44:02.877Z] CLI Version:   13.4.0
+[debug] [2024-03-05T22:44:02.877Z] Platform:      win32
+[debug] [2024-03-05T22:44:02.877Z] Node Version:  v20.9.0
+[debug] [2024-03-05T22:44:02.877Z] Time:          Tue Mar 05 2024 17:44:02 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-03-05T22:44:02.878Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T22:44:02.885Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T22:44:02.886Z] > authorizing via signed-in user (juandeq16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Apexl\Desktop\Astro
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-05T22:44:06.484Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-03-05T22:44:07.093Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-03-05T22:44:07.093Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project portafolio-c2119 (Portafolio) 
+[info] 
+=== Hosting Setup
+[debug] [2024-03-05T22:44:21.999Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-c2119 [none]
+[debug] [2024-03-05T22:44:22.328Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-c2119 200
+[debug] [2024-03-05T22:44:22.329Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-c2119 {"projectId":"portafolio-c2119","projectNumber":"583294368514","displayName":"Portafolio","name":"projects/portafolio-c2119","resources":{"hostingSite":"portafolio-c2119"},"state":"ACTIVE","etag":"1_4a87b378-d514-4952-b856-12fd15aa7302"}
+[info] 
+[info] i  Detected a .git folder at C:\Users\Apexl\Desktop\Astro 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=459403736&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-03-05T22:45:24.645Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-03-05T22:45:24.646Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-03-05T22:45:25.194Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-03-05T22:45:25.194Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-03-05T22:45:25.211Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-03-05T22:45:25.684Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-03-05T22:45:25.684Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Escobarq","id":140362363,"node_id":"U_kgDOCF3Cew","avatar_url":"https://avatars.githubusercontent.com/u/140362363?v=4","gravatar_id":"","url":"https://api.github.com/users/Escobarq","html_url":"https://github.com/Escobarq","followers_url":"https://api.github.com/users/Escobarq/followers","following_url":"https://api.github.com/users/Escobarq/following{/other_user}","gists_url":"https://api.github.com/users/Escobarq/gists{/gist_id}","starred_url":"https://api.github.com/users/Escobarq/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Escobarq/subscriptions","organizations_url":"https://api.github.com/users/Escobarq/orgs","repos_url":"https://api.github.com/users/Escobarq/repos","events_url":"https://api.github.com/users/Escobarq/events{/privacy}","received_events_url":"https://api.github.com/users/Escobarq/received_events","type":"User","site_admin":false,"name":"JuanDavid","company":"SENA","blog":"","location":"Colombia","email":null,"hireable":null,"bio":"Hola Soy Juan David Escobar Quezada desarrollador de software con 2 años de experiencia","twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":4,"created_at":"2023-07-24T02:22:44Z","updated_at":"2024-03-03T15:36:18Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":57879,"collaborators":3,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Escobarq 
+[info] 
+[debug] [2024-03-05T22:45:34.663Z] >>> [apiv2][query] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key type=owner
+[debug] [2024-03-05T22:45:35.004Z] <<< [apiv2][status] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key 404
+[debug] [2024-03-05T22:45:35.004Z] <<< [apiv2][body] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-03-05T22:45:58.878Z] >>> [apiv2][query] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key type=owner
+[debug] [2024-03-05T22:45:59.257Z] <<< [apiv2][status] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key 404
+[debug] [2024-03-05T22:45:59.257Z] <<< [apiv2][body] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-03-05T22:46:36.193Z] >>> [apiv2][query] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key type=owner
+[debug] [2024-03-05T22:46:36.606Z] <<< [apiv2][status] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key 404
+[debug] [2024-03-05T22:46:36.606Z] <<< [apiv2][body] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-03-05T22:47:22.038Z] >>> [apiv2][query] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key type=owner
+[debug] [2024-03-05T22:47:22.369Z] <<< [apiv2][status] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key 404
+[debug] [2024-03-05T22:47:22.369Z] <<< [apiv2][body] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-03-05T22:47:52.448Z] >>> [apiv2][query] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key type=owner
+[debug] [2024-03-05T22:47:52.864Z] <<< [apiv2][status] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key 404
+[debug] [2024-03-05T22:47:52.864Z] <<< [apiv2][body] GET https://api.github.com/repos/Escobarq/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-03-05T22:49:11.850Z] >>> [apiv2][query] GET https://api.github.com/repos/Astro/actions/secrets/public-key type=owner
+[debug] [2024-03-05T22:49:12.258Z] <<< [apiv2][status] GET https://api.github.com/repos/Astro/actions/secrets/public-key 404
+[debug] [2024-03-05T22:49:12.258Z] <<< [apiv2][body] GET https://api.github.com/repos/Astro/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-03-05T22:57:41.721Z] ----------------------------------------------------------------------
+[debug] [2024-03-05T22:57:41.724Z] Command:       C:\Program Files (x86)\nodejs\node.exe C:\Users\Apexl\Desktop\Astro\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-03-05T22:57:41.725Z] CLI Version:   13.4.0
+[debug] [2024-03-05T22:57:41.725Z] Platform:      win32
+[debug] [2024-03-05T22:57:41.726Z] Node Version:  v20.9.0
+[debug] [2024-03-05T22:57:41.726Z] Time:          Tue Mar 05 2024 17:57:41 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-03-05T22:57:41.726Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-05T22:57:41.734Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-05T22:57:41.734Z] > authorizing via signed-in user (juandeq16@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Apexl\Desktop\Astro
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-05T22:57:46.145Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-03-05T22:57:46.718Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-03-05T22:57:46.718Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project portafolio-b386b (Portafolio) 
+[info] 
+=== Hosting Setup
+[debug] [2024-03-05T22:57:50.041Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-b386b [none]
+[debug] [2024-03-05T22:57:50.312Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-b386b 200
+[debug] [2024-03-05T22:57:50.312Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-b386b {"projectId":"portafolio-b386b","projectNumber":"545621601644","displayName":"Portafolio","name":"projects/portafolio-b386b","resources":{"hostingSite":"portafolio-b386b"},"state":"ACTIVE","etag":"1_4750cbfe-039b-4d0c-a066-1a6539c38e09"}

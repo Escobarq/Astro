@@ -1,5 +1,7 @@
 ---
+import icon from '../../public/icon.ico'
 import './index.css'
+import FormContac from '../components/formcontac/Formcontac.astro'
 import Navbar from '../components/navbar/Navbar.astro'
 import Saludo from '../components/saludo/Saludo.astro'
 import Proyectos from '../components/proyectos/Proyectos.astro'
@@ -9,7 +11,7 @@ import Skills from '../components/skills/Skills.astro'
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href={icon} type="image/x-icon">
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Mi Portafolio </title>
@@ -19,6 +21,7 @@ import Skills from '../components/skills/Skills.astro'
     <Saludo/>
     <Proyectos/>
     <Skills/>
+    <FormContac client:load/>
   </body>
 </html>
 
@@ -31,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     elements.forEach(function(element) {
       var bounding = element.getBoundingClientRect();
-      if (bounding.top < window.innerHeight * 0.75) {
+      if (bounding.top < window.innerHeight * 0.70) {
         element.classList.add('active'); // Agregar la clase 'active'
       } else {
         element.classList.remove('active'); // Quitar la clase 'active'

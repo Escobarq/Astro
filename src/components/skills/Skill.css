@@ -4,18 +4,18 @@
 
 .skills {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
 .skill {
   width: 100%;
-  max-width: 200px;
   margin-bottom: 15px;
   text-align: center;
 }
 
 .skill img {
+  padding: 5%;
   width: 100%;
   max-width: 100px;
   height: auto;
@@ -32,4 +32,9 @@
 
 .zoom:hover {
   transform: scale(1.3); 
+}
+@media (width <= 425px){
+  .skill img {
+    width: 5em;
+  }
 }
