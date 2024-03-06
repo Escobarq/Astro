@@ -1,6 +1,6 @@
 ---
 import icon from '../../public/icon.ico'
-import './index.css'
+import './_index.css'
 import FormContac from '../components/formcontac/Formcontac.astro'
 import Navbar from '../components/navbar/Navbar.astro'
 import Saludo from '../components/saludo/Saludo.astro'
@@ -13,7 +13,6 @@ import Skills from '../components/skills/Skills.astro'
     <meta charset="utf-8" />
     <link rel="icon" href={icon} type="image/x-icon">
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
     <title>Mi Portafolio </title>
   </head>
   <body>
@@ -21,12 +20,11 @@ import Skills from '../components/skills/Skills.astro'
     <Saludo/>
     <Proyectos/>
     <Skills/>
-    <FormContac client:load/>
+    <FormContac/>
   </body>
 </html>
 
 <script>
-
 // scrollEffect.js
 document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', function() {
@@ -42,6 +40,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-
-
 </script>
