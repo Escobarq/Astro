@@ -10,7 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.4.2",
     "firebase-tools": "^13.4.0"
+  },
+  "devDependencies": {
+    "@types/estree": "^1.0.5",
+    "astro": "^4.4.11",
+    "vite": "^5.1.5"
   }
 }

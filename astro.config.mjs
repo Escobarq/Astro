@@ -1,4 +1,15 @@
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  buildOptions: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment'
+  },
+  resolve: {
+    alias: {
+      '@components': './src/components',
+      '@pages': './src/pages'
+      // Agrega más alias según sea necesario
+    }
+  }
+});
