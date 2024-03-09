@@ -1,11 +1,13 @@
 ---
 import './Proyectos.css'
+import Bike from '../../assets/Bike_Store_Deskpot.png'
+import Inmueble from '../../assets/inmuebles.jpeg'
 ---
 <div class="scroll-effect">
 <div class="contenedor">
     <h1 class="titulo-principal">Proyectos recientes</h1>
     <div class="tarjeta-proyecto">
-      <img class="imagen-proyecto" src="public/Bike_Store_Deskpot.png" alt="Diseño web de proyecto">
+      <img class="imagen-proyecto" src={Bike.src} alt="Diseño web de proyecto">
       <div class="informacion-proyecto">
         <h3 class="titulo-proyecto"><a href="https://github.com/Escobarq/Bike-Store-3JS">Ecommers Bike Store</a></h3>
         <ul class="lista-tecnologias">
@@ -18,7 +20,7 @@ import './Proyectos.css'
       </div>
     </div>
     <div class="tarjeta-proyecto">
-      <img class="imagen-proyecto" src="public/inmuebles.jpeg" alt="Diseño web de proyecto">
+      <img class="imagen-proyecto" src={Inmueble.src} alt="Diseño web de proyecto">
       <div class="informacion-proyecto">
         <h3 class="titulo-proyecto"><a href="https://github.com/Escobarq/AD_inmuebles">Escritorio AD_Inmubles</a></h3>
         <ul class="lista-tecnologias">
